@@ -52,7 +52,8 @@ function setup() {
   ground.addImage("ground",groundImage);
   ground.x = ground.width /2;
   
-  camera.position = trex.x;
+  camera.position.x = trex.x;
+  camera.position.y = trex.y;
 
   gameOver = createSprite(300,100);
   gameOver.addImage(gameOverImg);
